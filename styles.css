@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+   background: #C4D7FF;
+  
+cursor: default;
+   min-height: 100vh;
+
+}
+.container{
+    margin-left: 100px;
+    margin-top: 50px;
+  max-width: 400px;
+   height: auto;
+   background: linear-gradient(135deg,#FFD7C4,#FFF4B5); 
+    padding: 20px 30px;
+    border-radius: 15px;
+    
+}
+h2{
+    color: #87A2FF;
+}
+.row{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+ 
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+ 
+    border: none;
+    outline: none;
+    padding: 16px 40px;
+    background: #87A2FF;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul{
+    list-style: none;
+}
+li{
+
+    font-weight: 500;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remove-btn , .update-btn{
+    width: 20px;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+gap: 10px;
+}
+@media screen   and (max-width: 520px) {
+    .container{
+        margin:50px;   
+    }
+    
+}
+@media screen   and (max-width: 376px) {
+
+    .container{
+        margin:50px 10px;
+    }
+}
