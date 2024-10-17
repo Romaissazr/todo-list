@@ -43,13 +43,14 @@ function removeTask(item) {
 function updateTask(item) {
     let updatedText = prompt("Update your task:", item.firstChild.textContent); 
     
-    if (updatedText !== null && updatedText.trim() !== "") {
-        item.firstChild.textContent = updatedText; 
-    }
-    else{
+    while (updatedText !== null && updatedText.trim() === "") {
         alert("You must write something!");
-        let updatedText = prompt("Update your task:", item.firstChild.textContent); 
-    
+        updatedText = prompt("Update your task:", item.firstChild.textContent);
+    }
+
+
+    if (updatedText !== null) {
+        item.firstChild.textContent = updatedText;
     }
 }
 
